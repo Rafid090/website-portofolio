@@ -54,8 +54,9 @@ tabs.forEach(tab => {
 })
 
 /*--------------------- slide ------------------------ */
+// autoHeight: tinggi slider mengikuti slide yang tampil (deskripsi proyek panjangnya berbeda-beda)
 let swiper = new Swiper('.portofolio__container', {
-    cssMode: true,
+    autoHeight: true,
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',

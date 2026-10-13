@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="512" viewBox="0 0 960 512" overflow="hidden" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+  <!-- Ilustrasi aplikasi Catat: daftar tugas dengan tenggat, tag, dan pengingat -->
+  <rect width="960" height="512" fill="#EEF0FD"/>
+  <circle cx="150" cy="110" r="120" fill="#E1E5FB"/>
+  <circle cx="840" cy="440" r="140" fill="#E1E5FB"/>
+
+  <!-- ponsel -->
+  <rect x="356" y="34" width="248" height="470" rx="34" fill="#000" opacity=".07" transform="translate(6 8)"/>
+  <rect x="356" y="34" width="248" height="470" rx="34" fill="#3A3F55"/>
+  <rect x="368" y="46" width="224" height="446" rx="24" fill="#fff"/>
+  <rect x="452" y="56" width="56" height="8" rx="4" fill="#3A3F55"/>
+
+  <!-- header & tab -->
+  <text x="386" y="98" font-size="18" font-weight="700" fill="#2B2F45">Tugas</text>
+  <rect x="386" y="112" width="188" height="28" rx="14" fill="#F2F3F8"/>
+  <rect x="390" y="116" width="62" height="20" rx="10" fill="#5769E0"/>
+  <text x="421" y="130" font-size="10" fill="#fff" text-anchor="middle">Semua</text>
+  <text x="482" y="130" font-size="10" fill="#7A7E93" text-anchor="middle">Aktif</text>
+  <text x="540" y="130" font-size="10" fill="#7A7E93" text-anchor="middle">Selesai</text>
+
+  <!-- daftar tugas -->
+  <g>
+    <rect x="386" y="154" width="188" height="64" rx="12" fill="#F7F8FD"/>
+    <rect x="398" y="168" width="14" height="14" rx="4" fill="none" stroke="#5769E0" stroke-width="2"/>
+    <rect x="422" y="168" width="104" height="8" rx="4" fill="#3A3F55"/>
+    <rect x="422" y="184" width="64" height="7" rx="3.5" fill="#C9CCDA"/>
+    <rect x="422" y="198" width="40" height="12" rx="6" fill="#E1E5FB"/>
+    <rect x="466" y="198" width="46" height="12" rx="6" fill="#FFF0D9"/>
+    <circle cx="556" cy="172" r="5" fill="#E04848"/>
+  </g>
+  <g>
+    <rect x="386" y="228" width="188" height="64" rx="12" fill="#F7F8FD"/>
+    <rect x="398" y="242" width="14" height="14" rx="4" fill="none" stroke="#5769E0" stroke-width="2"/>
+    <rect x="422" y="242" width="88" height="8" rx="4" fill="#3A3F55"/>
+    <rect x="422" y="258" width="76" height="7" rx="3.5" fill="#C9CCDA"/>
+    <rect x="422" y="272" width="52" height="12" rx="6" fill="#E1E5FB"/>
+  </g>
+  <g>
+    <rect x="386" y="302" width="188" height="64" rx="12" fill="#F7F8FD"/>
+    <rect x="398" y="316" width="14" height="14" rx="4" fill="#5769E0"/>
+    <path d="M401 323l3 3 6-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="422" y="316" width="96" height="8" rx="4" fill="#B5B8C8"/>
+    <line x1="422" y1="320" x2="518" y2="320" stroke="#8C90A3" stroke-width="2"/>
+    <rect x="422" y="332" width="56" height="7" rx="3.5" fill="#DADCE6"/>
+  </g>
+  <g>
+    <rect x="386" y="376" width="188" height="64" rx="12" fill="#F7F8FD"/>
+    <rect x="398" y="390" width="14" height="14" rx="4" fill="none" stroke="#5769E0" stroke-width="2"/>
+    <rect x="422" y="390" width="110" height="8" rx="4" fill="#3A3F55"/>
+    <rect x="422" y="406" width="60" height="7" rx="3.5" fill="#C9CCDA"/>
+    <rect x="422" y="420" width="44" height="12" rx="6" fill="#E1E5FB"/>
+  </g>
+  <!-- tombol tambah -->
+  <circle cx="548" cy="462" r="22" fill="#5769E0"/>
+  <path d="M548 452v20M538 462h20" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- notifikasi pengingat -->
+  <g transform="translate(628 150)">
+    <rect width="230" height="76" rx="16" fill="#000" opacity=".06" transform="translate(4 6)"/>
+    <rect width="230" height="76" rx="16" fill="#fff"/>
+    <circle cx="38" cy="38" r="20" fill="#E1E5FB"/>
+    <path d="M38 26c-6 0-10 4.5-10 10v7l-3 4h26l-3-4v-7c0-5.5-4-10-10-10zM34 49a4 4 0 0 0 8 0" fill="none" stroke="#5769E0" stroke-width="3" stroke-linejoin="round"/>
+    <text x="70" y="34" font-size="14" font-weight="600" fill="#2B2F45">Pengingat tugas</text>
+    <rect x="70" y="46" width="130" height="8" rx="4" fill="#C9CCDA"/>
+  </g>
+
+  <!-- tag -->
+  <g transform="translate(110 300)" font-size="14" font-weight="500">
+    <rect width="104" height="34" rx="17" fill="#fff"/>
+    <circle cx="22" cy="17" r="6" fill="#5769E0"/>
+    <text x="36" y="22" fill="#3A3F55">#kerja</text>
+    <rect x="40" y="48" width="120" height="34" rx="17" fill="#fff"/>
+    <circle cx="62" cy="65" r="6" fill="#F0A020"/>
+    <text x="76" y="70" fill="#3A3F55">#pribadi</text>
+  </g>
+</svg>

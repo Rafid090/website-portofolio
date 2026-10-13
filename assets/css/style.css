@@ -307,6 +307,11 @@ button {
 }
 
 
+.home__scroll {
+    display: flex;
+    justify-content: center;
+}
+
 .home__scroll-button {
     color: var(--first-color);
     transition: .3s;
@@ -326,6 +331,19 @@ button {
 .home__scroll-arrow {
     font-size: 24px;
 }
+.home__status {
+    display: inline-flex;
+    align-items: center;
+    column-gap: var(--mb-0-5);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    background-color: var(--input-color);
+    padding: .35rem .9rem;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1-5);
+}
+
 .home__button {
     display: flex;
     justify-content: center;
@@ -441,8 +459,37 @@ button {
 
 .qualification__data {
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    column-gap: 1.5rem;
+    grid-template-columns: max-content 1fr;
+    column-gap: 1.25rem;
+}
+
+.qualification__data > div:last-child {
+    padding-bottom: var(--mb-1-5);
+}
+
+.qualification__list {
+    list-style: disc;
+    padding-left: 1.1rem;
+    margin-top: var(--mb-0-5);
+    font-size: var(--small-font-size);
+}
+
+.qualification__link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: var(--mb-0-25);
+    margin-top: var(--mb-0-5);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+}
+
+.qualification__link:hover {
+    color: var(--first-color-alt);
+}
+
+.qualification__list li + li {
+    margin-top: var(--mb-0-25);
 }
 
 .qualification__title {
@@ -726,7 +773,7 @@ a.contact_information:hover .contact_title {
     }
     .qualification__sections {
         display: grid;
-        grid-template-columns: .6fr;
+        grid-template-columns: minmax(0, 600px);
         justify-content: center;
     }
     .footer_copy {
@@ -789,9 +836,6 @@ a.contact_information:hover .contact_title {
     .home__blob {
         width: 270px;
     }
-    .home__scroll-button {
-        margin-left: 3rem;
-    }
 
     .container__about {
         column-gap: 5rem;
@@ -800,7 +844,7 @@ a.contact_information:hover .contact_title {
     .home__deskripsi,
     .about__deskripsi,
     .portofolio_description {
-        text-align: center;
+        text-align: left;
     }
     .about__img {
         width: 350px;
@@ -809,9 +853,6 @@ a.contact_information:hover .contact_title {
     .qualification__tabs {
         justify-content: center;
         column-gap: 3rem;
-    }
-    .qualification__sections {
-        grid-template-columns: .5fr;
     }
 
     .portofolio_content {

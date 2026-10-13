@@ -554,6 +554,8 @@ button {
 
 .contact_information {
     display: flex;
+    align-items: center;
+    column-gap: var(--mb-1);
     margin-bottom: var(--mb-1-5);
     color: inherit;
 }
@@ -563,13 +565,12 @@ a.contact_information:hover .contact_title {
 }
 
 .contact_icon {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     color: var(--first-color);
-    margin-right: var(--mb-1);
 }
 
 .contact_title {
-    font-size: var(--h1-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -626,7 +627,8 @@ a.contact_information:hover .contact_title {
 }
 
 .footer_title {
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-25);
 }
 
 .footer_subtitle {
@@ -648,9 +650,13 @@ a.contact_information:hover .contact_title {
     color: var(--first-color-lighter);
 }
 
+.footer_socials {
+    display: flex;
+    column-gap: var(--mb-1-5);
+}
+
 .footer_social {
     font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
 }
 
 .footer_social:hover {

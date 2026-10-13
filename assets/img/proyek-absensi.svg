@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="512" viewBox="0 0 960 512" overflow="hidden" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+  <!-- Ilustrasi (bukan data asli): laporan absensi harian dengan penanda pelanggaran, radius GPS, jam, dan ekspor PDF -->
+  <rect width="960" height="512" fill="#EEF0FD"/>
+  <circle cx="820" cy="80" r="140" fill="#E1E5FB"/>
+  <circle cx="90" cy="470" r="110" fill="#E1E5FB"/>
+
+  <!-- dokumen laporan -->
+  <rect x="128" y="58" width="470" height="404" rx="18" fill="#000" opacity=".06" transform="translate(6 8)"/>
+  <rect x="128" y="58" width="470" height="404" rx="18" fill="#fff"/>
+  <path d="M146 58h434a18 18 0 0 1 18 18v42H128V76a18 18 0 0 1 18-18z" fill="#5769E0"/>
+  <text x="156" y="97" font-size="21" font-weight="600" fill="#fff">Laporan Absensi Harian</text>
+
+  <!-- ringkasan -->
+  <g font-size="13" fill="#5B5F73">
+    <rect x="156" y="138" width="128" height="62" rx="10" fill="#EAF7EF"/>
+    <circle cx="176" cy="160" r="7" fill="#2FA866"/><text x="190" y="165">Hadir</text>
+    <rect x="172" y="178" width="70" height="8" rx="4" fill="#BFE6CF"/>
+    <rect x="299" y="138" width="128" height="62" rx="10" fill="#FFF5E5"/>
+    <circle cx="319" cy="160" r="7" fill="#F0A020"/><text x="333" y="165">Terlambat</text>
+    <rect x="315" y="178" width="54" height="8" rx="4" fill="#F9DDAE"/>
+    <rect x="442" y="138" width="128" height="62" rx="10" fill="#FDECEC"/>
+    <circle cx="462" cy="160" r="7" fill="#E04848"/><text x="476" y="165">Tidak absen</text>
+    <rect x="458" y="178" width="40" height="8" rx="4" fill="#F5C2C2"/>
+  </g>
+
+  <!-- tabel harian -->
+  <g>
+    <rect x="156" y="222" width="414" height="26" rx="6" fill="#F2F3F8"/>
+    <rect x="170" y="231" width="90" height="8" rx="4" fill="#C9CCDA"/>
+    <rect x="330" y="231" width="60" height="8" rx="4" fill="#C9CCDA"/>
+    <rect x="450" y="231" width="70" height="8" rx="4" fill="#C9CCDA"/>
+  </g>
+  <g fill="#DADCE6">
+    <rect x="170" y="268" width="120" height="8" rx="4"/><rect x="330" y="268" width="48" height="8" rx="4"/>
+    <rect x="170" y="302" width="96" height="8" rx="4"/><rect x="330" y="302" width="48" height="8" rx="4"/>
+    <rect x="170" y="336" width="132" height="8" rx="4"/><rect x="330" y="336" width="48" height="8" rx="4"/>
+    <rect x="170" y="370" width="104" height="8" rx="4"/><rect x="330" y="370" width="48" height="8" rx="4"/>
+    <rect x="170" y="404" width="116" height="8" rx="4"/><rect x="330" y="404" width="48" height="8" rx="4"/>
+  </g>
+  <g stroke="#EDEEF3" stroke-width="2">
+    <line x1="156" y1="289" x2="570" y2="289"/><line x1="156" y1="323" x2="570" y2="323"/>
+    <line x1="156" y1="357" x2="570" y2="357"/><line x1="156" y1="391" x2="570" y2="391"/>
+  </g>
+  <g>
+    <rect x="450" y="262" width="62" height="20" rx="10" fill="#EAF7EF"/><circle cx="464" cy="272" r="5" fill="#2FA866"/>
+    <rect x="450" y="296" width="62" height="20" rx="10" fill="#FFF5E5"/><circle cx="464" cy="306" r="5" fill="#F0A020"/>
+    <rect x="450" y="330" width="62" height="20" rx="10" fill="#EAF7EF"/><circle cx="464" cy="340" r="5" fill="#2FA866"/>
+    <rect x="450" y="364" width="62" height="20" rx="10" fill="#FDECEC"/><circle cx="464" cy="374" r="5" fill="#E04848"/>
+    <rect x="450" y="398" width="62" height="20" rx="10" fill="#EAF7EF"/><circle cx="464" cy="408" r="5" fill="#2FA866"/>
+    <g fill="#C9CCDA"><rect x="474" y="268" width="28" height="8" rx="4"/><rect x="474" y="302" width="28" height="8" rx="4"/><rect x="474" y="336" width="28" height="8" rx="4"/><rect x="474" y="370" width="28" height="8" rx="4"/><rect x="474" y="404" width="28" height="8" rx="4"/></g>
+  </g>
+
+  <!-- radius GPS lokasi kerja -->
+  <g transform="translate(728 196)">
+    <circle r="92" fill="#5769E0" opacity=".10"/>
+    <circle r="92" fill="none" stroke="#5769E0" stroke-width="2" stroke-dasharray="7 7"/>
+    <circle r="50" fill="#5769E0" opacity=".14"/>
+    <path d="M0 -40c-17 0-30 13-30 29 0 22 30 51 30 51s30-29 30-51c0-16-13-29-30-29z" fill="#5769E0"/>
+    <circle cy="-12" r="11" fill="#fff"/>
+  </g>
+
+  <!-- jam -->
+  <g transform="translate(676 382)">
+    <circle r="40" fill="#fff"/>
+    <circle r="40" fill="none" stroke="#F0A020" stroke-width="5"/>
+    <path d="M0 -22V0l15 10" fill="none" stroke="#3A3F55" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ekspor PDF -->
+  <g transform="translate(772 336)">
+    <path d="M0 0h62l24 24v86H0z" fill="#fff"/>
+    <path d="M62 0v24h24" fill="#E1E5FB"/>
+    <rect x="-12" y="58" width="74" height="32" rx="7" fill="#E04848"/>
+    <text x="25" y="80" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">PDF</text>
+  </g>
+</svg>

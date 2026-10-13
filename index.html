@@ -1,8 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Rafid Ammanullah | IT Staff, Web Developer & Workflow Automation</title>
+    <meta name="description" content="Portofolio Muhammad Rafid Ammanullah: Staff IT & General Affair, web developer (PHP/Laravel, Python, MySQL), dan otomasi alur kerja berbasis LLM. Lulusan Teknik Informatika Universitas Mulawarman.">
+    <meta name="theme-color" content="#5769E0">
+    <link rel="canonical" href="https://rafid090.github.io/website-portofolio/">
+
+    <!-----------------------Preview saat link dibagikan--------------------------->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="Muhammad Rafid Ammanullah | IT Staff, Web Developer & Workflow Automation">
+    <meta property="og:description" content="IT staff, web developer, dan otomasi alur kerja. Lihat skill, pengalaman, sertifikasi, dan proyek saya.">
+    <meta property="og:url" content="https://rafid090.github.io/website-portofolio/">
+    <meta property="og:image" content="https://rafid090.github.io/website-portofolio/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-----------------------Ikon tab--------------------------->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <!-----------------------Font--------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+
     <!-----------------------UNICON--------------------------->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -11,52 +36,53 @@
 
     <!-----------------------------CSS------------------------>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title> Portofolio </title>
 </head>
 <body>
     <!-------Header---------->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo"> Rafid </a>
+        <nav class="nav container" aria-label="Navigasi utama">
+            <a href="#home" class="nav__logo"> Rafid </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Home
+                            <i class="uil uil-estate nav__icon" aria-hidden="true"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
+                            <i class="uil uil-user nav__icon" aria-hidden="true"></i> About
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-info-alt nav__icon"></i> Skills
+                            <i class="uil uil-file-info-alt nav__icon" aria-hidden="true"></i> Skills
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#qualification" class="nav__link">
-                            <i class="uil uil-graduation-cap nav__icon"></i> Qualification
+                            <i class="uil uil-graduation-cap nav__icon" aria-hidden="true"></i> Qualification
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#projects" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Projects
+                            <i class="uil uil-scenery nav__icon" aria-hidden="true"></i> Projects
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact Me
+                            <i class="uil uil-message nav__icon" aria-hidden="true"></i> Contact Me
                         </a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
+                <button type="button" class="nav__close" id="nav-close" aria-label="Tutup menu">
+                    <i class="uil uil-times" aria-hidden="true"></i>
+                </button>
             </div>
             <div class="btns">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
+                <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Buka menu" aria-controls="nav-menu" aria-expanded="false">
+                    <i class="uil uil-apps" aria-hidden="true"></i>
+                </button>
             </div>
         </nav>
     </header>
@@ -65,53 +91,52 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://github.com/Rafid090" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github"></i>
+                        <a href="https://github.com/Rafid090" target="_blank" rel="noopener" class="home__social-icon" aria-label="GitHub">
+                            <i class="uil uil-github" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.instagram.com/rfid_15/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-instagram"></i>
+                        <a href="https://www.instagram.com/rfid_15/" target="_blank" rel="noopener" class="home__social-icon" aria-label="Instagram">
+                            <i class="uil uil-instagram" aria-hidden="true"></i>
                         </a>
                     </div>
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Foto Muhammad Rafid Ammanullah">
                             <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
                                 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                             </mask>
                             <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home__blob-img" x='2' xlink:href="assets/img/fprofil.png"/>
-                                <image href=""/>
+                                <image class="home__blob-img" x='2' y='-30' href="assets/img/profil.webp"/>
                             </g>
                         </svg>
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">
-                            Hi, i'm Rafid
+                            Hi, I'm Rafid
                         </h1>
-                        <h3 class="home__sub">
-                            Programmer & Graphic Designer
-                        </h3>
-                        <p class="home__deskripsi">
-                            Saya adalah lulusan Informatika Universitas Mulawarman. Memiliki kemampuan komunikasi dan adaptasi yang baik. Memiliki pengalaman magang sebagai graphic designer, video editor, dan admin data entry. Terlatih menggunakan software Adobe Family serta memiliki keahlian coding yang cukup baik terutama sebagai website developer.
+                        <p class="home__sub">
+                            IT Staff | Web Developer | Workflow Automation
                         </p>
-                        <div class="container__contact">
-                            <a href="#contact" class="button button--flex warna__font">
-                                Contact Me <i class="uil uil-message button__icon"></i>
+                        <p class="home__deskripsi">
+                            Lulusan S1 Teknik Informatika Universitas Mulawarman (IPK 3,80) dengan pengalaman hampir 3 tahun sebagai Staff IT & General Affair di perusahaan konstruksi. Membangun sistem otomasi pelaporan absensi untuk 135 pekerja proyek yang kini digunakan rutin oleh divisi HR. Terbiasa dengan PHP/Laravel, Python, MySQL, dan otomasi alur kerja berbasis LLM, didukung kemampuan desain grafis dan administrasi perkantoran.
+                        </p>
+                        <div class="home__button">
+                            <a download="CV Muhammad Rafid Ammanullah.pdf" href="assets/pdf/CV%20Muhammad%20Rafid%20Ammanullah.pdf" class="button button--flex">
+                                Curriculum Vitae <i class="uil uil-download-alt button__icon" aria-hidden="true"></i>
                             </a>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex warna__font">
-                        <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+                        <i class="uil uil-mouse-alt-2 home__scroll-mouse" aria-hidden="true"></i>
                         <span class="home__scroll-name"> Scroll Down </span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        <i class="uil uil-arrow-down home__scroll-arrow" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -122,17 +147,15 @@
             <span class="section__sub"> My Introduction </span>
 
             <div class="container__about container grid">
-                <img src="assets/img/about.jpg" alt="" class="about__img">
+                <img src="assets/img/about.webp" alt="Muhammad Rafid Ammanullah" width="640" height="516" loading="lazy" class="about__img">
 
                 <div class="about__data">
                     <p class="about__deskripsi">
-                        Halo! Saya Muhammad Rafid Ammanullah, lahir di Bontang pada tanggal 15 Maret 2000. Hobi saya adalah bermain game dan memperlajari hal-hal baru. Saya Fresh Graduate lulusan Universitas Mulawarman. Passion saya adalah desain, ui/ux & web development, serta editing video. Harapan dan impian saya ke depannya adalah bisa menjadi orang yang berguna dan bermanfaat baik bagi lingkungan maupun orang lain. 
+                        Saya Muhammad Rafid Ammanullah, lulusan S1 Teknik Informatika Universitas Mulawarman yang sejak November 2023 menjabat sebagai Staff IT & General Affair di PT. Harlis Tata Tahta, Bontang. Dalam peran ini, saya mengelola sistem dan database perusahaan, menangani dukungan teknis perangkat keras dan jaringan, serta mendukung administrasi proyek, mulai dari dokumen tender dan kontrak hingga data keuangan. Saya berfokus mengubah pekerjaan manual yang berulang menjadi proses otomatis yang akurat, terdokumentasi, dan mudah dipantau.
                     </p>
-                <div class="about__button">
-                    <a download="" href="assets/pdf/CV Muhammad Rafid Ammanullah.pdf" class="button button--flex">
-                        Download CV <i class="uil uil-download-alt button__icon"></i>
-                    </a>
-                </div>
+                    <p class="about__deskripsi">
+                        Di luar pekerjaan, saya aktif mengikuti berbagai pelatihan dan seminar daring bersertifikat, baik di bidang IT maupun non-IT, untuk memperluas wawasan dan membangun relasi profesional. Ke depan, saya ingin terus berkembang di bidang pengembangan web dan otomasi proses bisnis.
+                    </p>
                 </div>
             </div>
         </section>
@@ -142,157 +165,80 @@
             <span class="section__sub"> My Skills </span>
 
             <div class="skills__container container grid">
-                <div>
-                    <!------------------ Skills 1------------------------>
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__titles"> Website Developer </h1>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        HTML
-                                    </h3>
-                                    <span class="skills__number"> 80% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__html"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        CSS
-                                    </h3>
-                                    <span class="skills__number"> 78% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__css"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        PHP
-                                    </h3>
-                                    <span class="skills__number"> 72% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__php"></span>
-                                </div>
-                            </div>
-                            
-
-                        </div>
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon" aria-hidden="true"></i>
+                        <h3 class="skills__title"> Pemrograman & Database </h3>
                     </div>
+                    <ul class="tags">
+                        <li class="tag">PHP</li>
+                        <li class="tag">Laravel</li>
+                        <li class="tag">Python</li>
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">Bootstrap</li>
+                        <li class="tag">MySQL</li>
+                    </ul>
                 </div>
 
-                <div>
-                    <!------------------ Skills 2------------------------>
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-swatchbook skills__icon"></i>
-
-                            <div> 
-                                <h1 class="skills__titles"> Design </h1>
-                                
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        Photoshop
-                                    </h3>
-                                    <span class="skills__number"> 85% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__photoshop"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        Illustrator
-                                    </h3>
-                                    <span class="skills__number"> 75% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__illustrator"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        Figma
-                                    </h3>
-                                    <span class="skills__number"> 80% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__figma"></span>
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="uil uil-robot skills__icon" aria-hidden="true"></i>
+                        <h3 class="skills__title"> Otomasi & AI </h3>
                     </div>
+                    <ul class="tags">
+                        <li class="tag">Otomasi alur kerja berbasis LLM</li>
+                        <li class="tag">Prompt engineering</li>
+                    </ul>
                 </div>
 
-                <div>
-                    <!------------------ Skills 3------------------------>
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-presentation-play skills__icon"></i>
-
-                            <div> 
-                                <h1 class="skills__titles"> Video Editing </h1>
-                                
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        Adobe Premiere Pro
-                                    </h3>
-                                    <span class="skills__number"> 90% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__premiere"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">
-                                        Adobe After Effect
-                                    </h3>
-                                    <span class="skills__number"> 75% </span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__after"></span>
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="uil uil-server-network skills__icon" aria-hidden="true"></i>
+                        <h3 class="skills__title"> IT Support </h3>
                     </div>
+                    <ul class="tags">
+                        <li class="tag">Konfigurasi perangkat keras</li>
+                        <li class="tag">Troubleshooting perangkat keras</li>
+                        <li class="tag">Jaringan komputer</li>
+                    </ul>
+                </div>
+
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="uil uil-swatchbook skills__icon" aria-hidden="true"></i>
+                        <h3 class="skills__title"> Desain Grafis </h3>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">Adobe Photoshop</li>
+                        <li class="tag">Adobe Illustrator</li>
+                        <li class="tag">Figma</li>
+                    </ul>
+                </div>
+
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="uil uil-presentation-play skills__icon" aria-hidden="true"></i>
+                        <h3 class="skills__title"> Video Editing </h3>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">Adobe Premiere Pro</li>
+                        <li class="tag">Adobe After Effects</li>
+                        <li class="tag">Motion graphic</li>
+                    </ul>
+                </div>
+
+                <div class="skills__content">
+                    <div class="skills__header">
+                        <i class="uil uil-file-alt skills__icon" aria-hidden="true"></i>
+                        <h3 class="skills__title"> Office & Bahasa </h3>
+                    </div>
+                    <ul class="tags">
+                        <li class="tag">Microsoft Excel (PivotTable, VLOOKUP)</li>
+                        <li class="tag">Microsoft Word</li>
+                        <li class="tag">Bahasa Indonesia (native)</li>
+                        <li class="tag">Bahasa Inggris (membaca dokumen teknis)</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -300,31 +246,32 @@
         <section class="qualification section" id="qualification">
             <h2 class="section__title"> Qualification </h2>
             <span class="section__sub"> My Personal Journey </span>
-            
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
 
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+            <div class="qualification__container container">
+                <div class="qualification__tabs" role="tablist">
+                    <button type="button" class="qualification__button button--flex qualification__active" data-target="#education" role="tab" aria-selected="true" aria-controls="education" id="tab-education">
+                        <i class="uil uil-graduation-cap qualification__icon" aria-hidden="true"></i>
+                        Education
+                    </button>
+                    <button type="button" class="qualification__button button--flex" data-target="#work" role="tab" aria-selected="false" aria-controls="work" id="tab-work">
+                        <i class="uil uil-briefcase-alt qualification__icon" aria-hidden="true"></i>
                         Work
-                    </div>
+                    </button>
+                    <button type="button" class="qualification__button button--flex" data-target="#certification" role="tab" aria-selected="false" aria-controls="certification" id="tab-certification">
+                        <i class="uil uil-award qualification__icon" aria-hidden="true"></i>
+                        Certification
+                    </button>
                 </div>
 
                 <div class="qualification__sections">
-                    <!--================== Qualification Content 1 =========================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--================== Qualification 1 =========================-->
+                    <div class="qualification__content qualification__active" data-content id="education" role="tabpanel" aria-labelledby="tab-education">
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title"> Universitas Mulawarman </h3>
-                                <span class="qualification__sub"> S1 - Teknik Informatika </span>
+                                <span class="qualification__sub"> S1 Teknik Informatika · IPK 3,80 </span>
                                 <div class="calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018 - 2023
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
+                                    Agustus 2018 - Agustus 2023
                                 </div>
                             </div>
 
@@ -334,9 +281,8 @@
                             </div>
                         </div>
 
-                        <!--================== Qualification 2 =========================-->
                         <div class="qualification__data">
-                            <div> </div>
+                            <div></div>
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
@@ -345,79 +291,67 @@
                             <div>
                                 <h3 class="qualification__title"> SMA Negeri 1 Bontang </h3>
                                 <div class="calendar">
-                                    <i class="uil uil-calendar-alt"></i>
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
                                     2015 - 2018
                                 </div>
                             </div>
-                            
                         </div>
 
-                        <!--================== Qualification 3 =========================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title"> SMP Negeri 1 Bontang </h3>
                                 <div class="calendar">
-                                    <i class="uil uil-calendar-alt"></i>
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
                                     2012 - 2015
                                 </div>
                             </div>
 
-                             <div>
+                            <div>
                                 <span class="qualification__rounder"></span>
-                                
                             </div>
                         </div>
-                        
                     </div>
 
-                    <!--================== Qualification Content 2 =========================-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--================== Qualification 1 =========================-->
+                    <div class="qualification__content" data-content id="work" role="tabpanel" aria-labelledby="tab-work">
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title"> CV. Fajri Toy's Collection </h3>
-                                <span class="qualification__sub"> Graphic Designer & Video Editor</span>
+                                <h3 class="qualification__title"> PT. Harlis Tata Tahta </h3>
+                                <span class="qualification__sub"> Staff IT & General Affair </span>
                                 <div class="calendar">
-                                    <i class="uil uil-calendar-alt"></i>
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
+                                    November 2023 - Sekarang
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title"> FTC Group </h3>
+                                <span class="qualification__sub"> Graphic Designer & Video Editor </span>
+                                <div class="calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
                                     Agustus - Oktober 2023
                                 </div>
                             </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
                         </div>
 
-                        <!--================== Qualification 2 =========================-->
                         <div class="qualification__data">
-                            <div> </div>
                             <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title"> PT. Harlis Tahta Tata </h3>
-                                <span class="qualification__sub"> Staff IT & Data Entry</span>
+                                <h3 class="qualification__title"> Firli Group </h3>
+                                <span class="qualification__sub"> Graphic Designer </span>
                                 <div class="calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Februari - Mei 2022
-                                </div>
-                            </div>
-                            <div>
-                                
-                            </div>
-                        </div>
-
-                        <!--================== Qualification 3 =========================-->
-                        <div class="qualification__data">
-                            
-                            <div>
-                                <h3 class="qualification__title"> Firli Group Entertainment </h3>
-                                <span class="qualification__sub"> Graphic Designer & Video Editor</span>     
-                                <div class="calendar">
-                                    <i class="uil uil-calendar-alt"></i>
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
                                     September - Desember 2021
                                 </div>
                             </div>
@@ -428,9 +362,8 @@
                             </div>
                         </div>
 
-                        <!--================== Qualification 4 =========================-->
                         <div class="qualification__data">
-                            <div> </div>
+                            <div></div>
                             <div>
                                 <span class="qualification__rounder"></span>
                             </div>
@@ -439,12 +372,78 @@
                                 <h3 class="qualification__title"> PT. Bestcamp Multimedia </h3>
                                 <span class="qualification__sub"> Magang </span>
                                 <div class="calendar">
-                                    <i class="uil uil-calendar-alt"></i>
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
                                     Maret 2021
                                 </div>
                             </div>
                         </div>
-                        
+                    </div>
+
+                    <div class="qualification__content" data-content id="certification" role="tabpanel" aria-labelledby="tab-certification">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title"> Pelatihan Dasar-Dasar K3 Umum </h3>
+                                <span class="qualification__sub"> Pelatihan daring · PT. Indevina Safety Consultant </span>
+                                <div class="calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
+                                    2026
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title"> Sertifikat Kompetensi K3 Konstruksi </h3>
+                                <span class="qualification__sub"> Badan Nasional Sertifikasi Profesi (BNSP) </span>
+                                <div class="calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
+                                    2024
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title"> Sertifikat Kompetensi Desain Grafis </h3>
+                                <span class="qualification__sub"> LSP BPPTIK </span>
+                                <div class="calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
+                                    2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title"> OpenStreetMap (OSM) Training </h3>
+                                <span class="qualification__sub"> University Roadshow · HOT Indonesia & LP2M Universitas Mulawarman </span>
+                                <div class="calendar">
+                                    <i class="uil uil-calendar-alt" aria-hidden="true"></i>
+                                    2021
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -453,107 +452,157 @@
         <section class="portofolio section" id="projects">
             <h2 class="section__title"> Portofolio </h2>
             <span class="section__sub"> Most Recent Project </span>
-            
+
             <div class="portofolio__container container swiper mySwiper">
                 <div class="swiper-wrapper">
-                     <!--================== Portofolio 1 =========================-->
                     <div class="portofolio_content grid swiper-slide">
-                        <a href="#" class="portofolio_img">
-                        <img src="assets/img/website.png" alt="" class="portofolio_img">
+                        <img src="assets/img/proyek-absensi.svg" alt="Ilustrasi laporan absensi harian dengan penanda hadir, terlambat, dan tidak absen" width="960" height="512" loading="lazy" class="portofolio_img">
                         <div class="portofolio_data">
-                            <h3 class="portofolio_title"> Website Developer </h3>
+                            <h3 class="portofolio_title"> Sistem Otomasi Pelaporan Absensi Pekerja Proyek </h3>
+                            <span class="portofolio_meta"> 2026 · Proyek kantor </span>
+                            <p class="portofolio_description">
+                                Laporan absensi harian otomatis untuk 135 pekerja proyek. Aturan kehadiran (ambang keterlambatan, jam pulang minimum, radius GPS lokasi kerja) diterjemahkan menjadi indikator pelanggaran, lalu dirangkum dalam laporan PDF untuk divisi HR beserta rekomendasi tindak lanjut.
+                            </p>
+                            <ul class="tags portofolio_tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Claude Code</li>
+                            <li class="tag">Integrasi web app absensi</li>
+                            <li class="tag">Laporan PDF</li>
+                            </ul>
                         </div>
-                        </a>
                     </div>
 
-                    <!--================== Portofolio 2 =========================-->
                     <div class="portofolio_content grid swiper-slide">
-                        <a href="https://drive.google.com/drive/u/0/folders/1pWcSuonMMWAvOPObwjgBaGzuZ8pMEK5q" target="_blank" class="portofolio_img">
-                        <img src="assets/img/desain.jpg" alt="" class="portofolio_img">
+                        <img src="assets/img/proyek-website.webp" alt="Halaman login website SPK Karyawan Rumah Sakit KORPRI Samarinda" width="960" height="510" loading="lazy" class="portofolio_img">
                         <div class="portofolio_data">
-                            <h3 class="portofolio_title1"> Graphic Designer </h3>
-                        </div>
+                            <h3 class="portofolio_title"> SPK Perekrutan Karyawan RS KORPRI Samarinda </h3>
+                            <span class="portofolio_meta"> 2023 · Skripsi </span>
+                            <p class="portofolio_description">
+                                Aplikasi web yang memeringkat pelamar secara otomatis berdasarkan 4 kriteria dengan metode Weighted Product. Kriteria dan bobot dapat diubah tanpa mengubah kode; diuji dengan 20 data pelamar dan hasilnya sesuai penilaian manual tim HRD.
+                            </p>
+                            <ul class="tags portofolio_tags">
+                            <li class="tag">PHP</li>
+                            <li class="tag">MySQL</li>
+                            <li class="tag">Weighted Product</li>
+                            </ul>
+                        <a href="https://github.com/Rafid090/website-SPK" target="_blank" rel="noopener" class="button button--flex button--small">
+                            Lihat Repo <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
                         </a>
+                        </div>
                     </div>
 
-                    <!--================== Portofolio 3 =========================-->
                     <div class="portofolio_content grid swiper-slide">
-                        <a href="https://drive.google.com/drive/folders/1NCJF1XD1t7lHOZR5cdTN5D4KkOPhYIwH?usp=sharing" target="_blank" class="portofolio_img">
-                        <img src="assets/img/video editor.png" alt="" class="portofolio_img">
+                        <img src="assets/img/proyek-desain.webp" alt="Kumpulan karya desain grafis" width="960" height="426" loading="lazy" class="portofolio_img">
                         <div class="portofolio_data">
-                            <h3 class="portofolio_title"> Video Editor </h3>
-                        </div>
+                            <h3 class="portofolio_title"> Desain Grafis </h3>
+                            <span class="portofolio_meta"> 2021 - 2023 · FTC Group & Firli Group </span>
+                            <p class="portofolio_description">
+                                Spanduk, baliho, flyer, backdrop, dan logo untuk kebutuhan event, serta konten feed Instagram dan desain iklan pemasaran produk.
+                            </p>
+                            <ul class="tags portofolio_tags">
+                            <li class="tag">Adobe Photoshop</li>
+                            <li class="tag">Adobe Illustrator</li>
+                            </ul>
+                        <a href="https://drive.google.com/drive/u/0/folders/1pWcSuonMMWAvOPObwjgBaGzuZ8pMEK5q" target="_blank" rel="noopener" class="button button--flex button--small">
+                            Lihat Karya <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
                         </a>
+                        </div>
+                    </div>
+
+                    <div class="portofolio_content grid swiper-slide">
+                        <img src="assets/img/proyek-video.webp" alt="Cuplikan hasil editing video" width="960" height="506" loading="lazy" class="portofolio_img">
+                        <div class="portofolio_data">
+                            <h3 class="portofolio_title"> Video Editing </h3>
+                            <span class="portofolio_meta"> 2021 - 2023 · FTC Group & Firli Group </span>
+                            <p class="portofolio_description">
+                                Dokumentasi event, video iklan pemasaran produk, dan motion graphic.
+                            </p>
+                            <ul class="tags portofolio_tags">
+                            <li class="tag">Adobe Premiere Pro</li>
+                            <li class="tag">Adobe After Effects</li>
+                            </ul>
+                        <a href="https://drive.google.com/drive/folders/1NCJF1XD1t7lHOZR5cdTN5D4KkOPhYIwH?usp=sharing" target="_blank" rel="noopener" class="button button--flex button--small">
+                            Lihat Video <i class="uil uil-arrow-right button__icon" aria-hidden="true"></i>
+                        </a>
+                        </div>
                     </div>
                 </div>
-                
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portofolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portofolio-icon"></i>
-                    </div>
-                    
-                    <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portofolio-icon" aria-hidden="true"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portofolio-icon" aria-hidden="true"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
             </div>
-            
         </section>
 
         <section class="contact section" id="contact">
             <h2 class="section__title"> Contact Me </h2>
-            <span class="section__sub"> My Bussiness Contact </span>
-            
-            <div class="contact_container container grid"> 
-                <div class="contact_information">
-                    <i class="uil uil-phone contact_icon"></i>
-                    <div>
-                        <h3 class="contact_title"> Whatsapp </h3>
-                        <span class="contact_subtitle"> +62-853-4884-7033</span>
+            <span class="section__sub"> My Business Contact </span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <a href="https://wa.me/6285348847033" target="_blank" rel="noopener" class="contact_information">
+                        <i class="uil uil-phone contact_icon" aria-hidden="true"></i>
+                        <div>
+                            <h3 class="contact_title"> Whatsapp </h3>
+                            <span class="contact_subtitle"> +62-853-4884-7033</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:rafidfkti@gmail.com" class="contact_information">
+                        <i class="uil uil-envelope contact_icon" aria-hidden="true"></i>
+                        <div>
+                            <h3 class="contact_title"> Email </h3>
+                            <span class="contact_subtitle"> rafidfkti@gmail.com </span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/muhammad-rafid-ammanullah-823632231/" target="_blank" rel="noopener" class="contact_information">
+                        <i class="uil uil-linkedin-alt contact_icon" aria-hidden="true"></i>
+                        <div>
+                            <h3 class="contact_title"> LinkedIn </h3>
+                            <span class="contact_subtitle"> Muhammad Rafid Ammanullah </span>
+                        </div>
+                    </a>
+
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon" aria-hidden="true"></i>
+                        <div>
+                            <h3 class="contact_title"> Address </h3>
+                            <span class="contact_subtitle"> Bontang, Kalimantan Timur</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Tanpa server: pesan dibuka di WhatsApp atau aplikasi email pengunjung, sudah terisi -->
+                <form class="contact_form grid" id="contact-form" data-whatsapp="6285348847033" data-email="rafidfkti@gmail.com">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="contact-name" class="contact_label">Name</label>
+                            <input type="text" id="contact-name" name="name" class="contact_input" autocomplete="name" required>
+                        </div>
+                        <div class="contact_content">
+                            <label for="contact-message" class="contact_label">Message</label>
+                            <textarea id="contact-message" name="message" rows="7" class="contact_input" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="contact_buttons">
+                        <button type="submit" class="button button--flex" data-channel="whatsapp">
+                            Send via WhatsApp
+                            <i class="uil uil-whatsapp button__icon" aria-hidden="true"></i>
+                        </button>
+                        <button type="submit" class="button button--flex button--ghost" data-channel="email">
+                            Send via Email
+                            <i class="uil uil-message button__icon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
-
-            <div class="contact_container container grid"> 
-                <div class="contact_information">
-                    <i class="uil uil-envelope contact_icon"></i>
-                    <div>
-                        <h3 class="contact_title"> Email </h3>
-                        <span class="contact_subtitle"> rafidfkti@gmail.com </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact_container container grid"> 
-                <div class="contact_information">
-                    <i class="uil uil-map-marker contact_icon"></i>
-                    <div>
-                        <h3 class="contact_title"> Address </h3>
-                        <span class="contact_subtitle"> Indonesia - Samarinda</span>
-                    </div>
-                </div>
-
-            <form action="" class="contact_form grid">
-                <div class="contact_inputs grid">
-                    <div class="contact_content">
-                        <label for="" class="contact_label">Name</label>
-                        <input type="text" class="contact_input">
-                    </div>
-                    <div class="contact_content">
-                        <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button button--flex">
-                            Send Message
-                            <i class="uil uil-message button_icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </form>
-            </div>
-            
         </section>
     </main>
 
@@ -561,39 +610,37 @@
         <div class="footer_bg">
             <div class="footer_container container grid">
                 <div>
-                    <h1 class="footer_title"> Rafid </h1>
-                    <span class="footer_subtitle"> Website Developer, Graphic Designer, Video Editor</span>
+                    <h2 class="footer_title"> Rafid </h2>
+                    <span class="footer_subtitle"> IT Staff, Web Developer, Workflow Automation</span>
                 </div>
                 <ul class="footer_links">
                     <li>
-                        <a href="#projects" class="footer_link" style="color: #fff">Portofolio</a>
+                        <a href="#projects" class="footer_link">Portofolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer_link" style="color: #fff">Contact Me</a>
+                        <a href="#contact" class="footer_link">Contact Me</a>
                     </li>
                 </ul>
-                <div class="footer_socials"> 
-                    <a href="https://www.instagram.com/" target="_blank" class="footer_social">
-                        <i class="uil uil-instagram"></i>
+                <div class="footer_socials">
+                    <a href="https://github.com/Rafid090" target="_blank" rel="noopener" class="footer_social" aria-label="GitHub">
+                        <i class="uil uil-github" aria-hidden="true"></i>
                     </a>
-    
-                    <a href="https://www.facebook.com/" target="_blank" class="footer_social">
-                        <i class="uil uil-facebook-f"></i>
+                    <a href="https://www.linkedin.com/in/muhammad-rafid-ammanullah-823632231/" target="_blank" rel="noopener" class="footer_social" aria-label="LinkedIn">
+                        <i class="uil uil-linkedin-alt" aria-hidden="true"></i>
                     </a>
-
-                    <a href="https://twitter.com/" target="_blank" class="footer_social">
-                        <i class="uil uil-twitter"></i>
+                    <a href="https://www.instagram.com/rfid_15/" target="_blank" rel="noopener" class="footer_social" aria-label="Instagram">
+                        <i class="uil uil-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
-                <p class="footer_copy">&#169; Muhammad Rafid Ammanullah. All right reserved</p>
-            </div>   
+                <p class="footer_copy">&#169; <span id="footer-year">2026</span> Muhammad Rafid Ammanullah. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-    
+
     <!-------------------Swiper JS----------------------->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
 
     <!-------------------Javascript----------------------->
-    <script src="assets/js/main.js"></script>
-    </body>
+    <script src="assets/js/main.js" defer></script>
+</body>
 </html>

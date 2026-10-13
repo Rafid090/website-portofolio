@@ -3,51 +3,33 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
+function setMenu(open) {
+    navMenu.classList.toggle('show-menu', open)
+    navToggle.setAttribute('aria-expanded', open)
+}
+
 /*======== Menu show ==========*/
 /*validasi nilai*/
 if(navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
-    })
+    navToggle.addEventListener('click', () => setMenu(true))
 }
 
 /*==========menu hidden ===========*/
 if(navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
+    navClose.addEventListener('click', () => setMenu(false))
 }
 
 /*========= remove menu mobile =============*/
-const navLink = document.querySelectorAll('.nav__link')
+// Saat salah satu link menu diklik, menu HP ditutup
+document.querySelectorAll('.nav__link').forEach(n => n.addEventListener('click', () => setMenu(false)))
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+/*========= bayangan header saat digulir =============*/
+const header = document.getElementById('header')
+function scrollHeader() {
+    header.classList.toggle('scroll-header', window.scrollY >= 50)
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*================== skills ========================== */
-const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll(' .skills__header')
-
-function toggleSkills () {
-    let itemClass = this.parentNode.className
-
-    for (i=0; i < skillsContent.length; i++) {
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-
-    if(itemClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open'
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills)
-})
-
+window.addEventListener('scroll', scrollHeader, { passive: true })
+scrollHeader()
 
 /*--------------------- qualification tabs ------------------------ */
 const tabs = document.querySelectorAll('[data-target]'),
@@ -62,10 +44,12 @@ tabs.forEach(tab => {
         })
         target.classList.add('qualification__active')
 
-        tabs.forEach(tab => {
-            tab.classList.remove('qualification__active')
+        tabs.forEach(t => {
+            t.classList.remove('qualification__active')
+            t.setAttribute('aria-selected', 'false')
         })
         tab.classList.add('qualification__active')
+        tab.setAttribute('aria-selected', 'true')
     })
 })
 
@@ -82,3 +66,29 @@ let swiper = new Swiper('.portofolio__container', {
       clickable: true,
     },
   });
+
+/*--------------------- contact form ------------------------ */
+// Situs statis (GitHub Pages) tidak punya server untuk mengirim email,
+// jadi pesan dibuka di WhatsApp atau aplikasi email pengunjung dalam keadaan sudah terisi.
+const contactForm = document.getElementById('contact-form')
+
+if(contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        const name = contactForm.elements.name.value.trim(),
+              message = contactForm.elements.message.value.trim(),
+              channel = e.submitter?.dataset.channel || 'whatsapp'
+
+        if(channel === 'email') {
+            const subject = `Pesan dari ${name} (website portofolio)`
+            window.location.href = `mailto:${contactForm.dataset.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
+        } else {
+            const text = `Halo Rafid, saya ${name}.\n\n${message}`
+            window.open(`https://wa.me/${contactForm.dataset.whatsapp}?text=${encodeURIComponent(text)}`, '_blank', 'noopener')
+        }
+    })
+}
+
+/*--------------------- tahun di footer ------------------------ */
+document.getElementById('footer-year').textContent = new Date().getFullYear()

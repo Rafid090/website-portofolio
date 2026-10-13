@@ -21,8 +21,8 @@ lalu buka http://localhost:8000.
 ```
 index.html              semua isi halaman
 assets/css/style.css    tampilan (mobile-first; breakpoint 568px, 768px, 1024px di bagian akhir)
-assets/js/main.js       menu HP, accordion skill, tab kualifikasi, slider, form kontak
-assets/img/             foto & gambar proyek (WebP), favicon, og-image.jpg (preview saat link dibagikan)
+assets/js/main.js       menu HP, tab kualifikasi, slider, form kontak
+assets/img/             foto & gambar proyek (WebP/SVG), favicon, og-image.jpg (preview saat link dibagikan)
 assets/pdf/             CV yang bisa diunduh dari tombol "Curriculum Vitae"
 ```
 
@@ -31,9 +31,9 @@ assets/pdf/             CV yang bisa diunduh dari tombol "Curriculum Vitae"
 | Yang diubah | Di mana |
 |---|---|
 | Deskripsi diri | `index.html`, bagian `#home` dan `#about` |
-| Skill & persentase | `index.html`, bagian `#skills`. Ubah angka **dan** `style="width: ..%"` di baris bawahnya |
-| Pendidikan / pengalaman kerja | `index.html`, bagian `#qualification` (setiap item berselang-seling kiri–kanan) |
-| Proyek | `index.html`, bagian `#projects`. Satu `swiper-slide` = satu proyek |
+| Skill | `index.html`, bagian `#skills`. Satu kartu = satu kategori, satu `<li class="tag">` = satu skill |
+| Pendidikan / pengalaman kerja / sertifikasi | `index.html`, bagian `#qualification`, tab `#education`, `#work`, `#certification` (setiap item berselang-seling kiri–kanan) |
+| Proyek | `index.html`, bagian `#projects`. Satu `swiper-slide` = satu proyek (gambar, judul, tahun, deskripsi, teknologi, tombol link opsional) |
 | Nomor WhatsApp / email form kontak | atribut `data-whatsapp` dan `data-email` pada `<form id="contact-form">` |
 | CV | ganti file di `assets/pdf/` dengan nama yang sama |
 

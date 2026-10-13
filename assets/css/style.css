@@ -248,13 +248,11 @@ button {
 
 .about__deskripsi {
     justify-content: center;
-    text-align: justify;
     color: var(--title-color);
     margin-bottom: var(--mb-0-25);
 }
 .home__deskripsi {
     justify-content: center;
-    text-align: justify;
 }
 
 .home__social-icon {
@@ -346,6 +344,11 @@ button {
     background-color: var(--first-color-alt);
 }
 
+.button--small {
+    padding: .5rem 1rem;
+    font-size: var(--small-font-size);
+}
+
 .button--ghost {
     background-color: var(--input-color);
     color: var(--first-color);
@@ -373,80 +376,50 @@ button {
 }
 
 /*======================== Skills ========================== */
-.skills__container {
-    row-gap: 0;
+.skills__content {
+    background-color: var(--container-color);
+    border-radius: .75rem;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px hsla(var(--hue-color), 48%, 40%, .08);
 }
 
 .skills__header {
     display: flex;
     align-items: center;
-    width: 100%;
-    text-align: left;
-    margin-bottom: var(--mb-2-5);
-    cursor: pointer;
+    column-gap: var(--mb-0-75);
+    margin-bottom: var(--mb-1);
 }
 
-.skills__icon, .skills__arrow {
+.skills__icon {
     font-size: 2rem;
     color: var(--first-color);
-
-}
-.skills__icon {
-    margin-right: var(--mb-0-75);
 }
 
 .skills__title {
-    font-size: var(--h3-font-size)
+    font-size: var(--h3-font-size);
 }
 
-.skills__arrow {
-    margin-left: auto;
-    transition: .4s;
-}
-
-.skills__titles {
+/*================ Tags (skill & teknologi proyek) ================*/
+.tags {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: var(--mb-0-5);
+    flex-wrap: wrap;
+    gap: var(--mb-0-5);
 }
 
-.skills__name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-}
-
-.skills__bar, .skills__percentage {
-    height: 5px;
-    border-radius: .25rem;
-}
-
-.skills__bar {
-    background-color: var(--first-color-lighter);
-}
-
-.skills__percentage {
-    display: block;
-    background-color: var(--first-color);
-}
-
-.skills__close .skills__list{
-    height: 0;
-    overflow: hidden;
-}
-
-.skills__open .skills__list {
-    height: max-content;
-    margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow {
-    transform: rotate(-180deg);
+.tag {
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    background-color: var(--input-color);
+    padding: .25rem .75rem;
+    border-radius: 1rem;
 }
 
 /*---------------- Qualification ------------------*/
 .qualification__tabs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: var(--mb-1);
     margin-bottom: var(--mb-2);
 }
 
@@ -515,13 +488,8 @@ button {
 
 /*---------------- Portofolio ------------------*/
 .portofolio_content {
-    padding: 0 1.5rem;
-}
-
-.portofolio_link {
-    display: grid;
-    justify-items: center;
-    row-gap: var(--mb-1);
+    padding: 0 2rem 2.5rem;
+    row-gap: var(--mb-1-5);
 }
 
 .portofolio_img {
@@ -530,16 +498,28 @@ button {
     aspect-ratio: 15 / 8;
     object-fit: cover;
     border-radius: .5rem;
+    justify-self: center;
 }
 
 .portofolio_title {
     font-size: var(--h4-font-size);
-    margin-bottom: var(--mb-1-5);
-    text-align: center;
+    margin-bottom: var(--mb-0-25);
 }
 
-.portofolio_link:hover .portofolio_title {
+.portofolio_meta {
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
     color: var(--first-color);
+    margin-bottom: var(--mb-0-75);
+}
+
+.portofolio_description {
+    margin-bottom: var(--mb-1);
+}
+
+.portofolio_tags {
+    margin-bottom: var(--mb-1-5);
 }
 
 .swiper-button-prev::after,
@@ -735,8 +715,7 @@ a.contact_information:hover .contact_title {
         grid-template-columns: repeat(2, 1fr);
     }
     .skills__container {
-        column-gap: 2rem;
-        align-items: start;
+        column-gap: 1.5rem;
     }
     .qualification__sections {
         display: grid;
@@ -817,14 +796,17 @@ a.contact_information:hover .contact_title {
 
     .qualification__tabs {
         justify-content: center;
-        column-gap: 4rem;
+        column-gap: 3rem;
     }
     .qualification__sections {
         grid-template-columns: .5fr;
     }
 
     .portofolio_content {
-        padding: 0 4rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 2rem;
+        padding: 0 3.5rem 3rem;
     }
     .swiper-portofolio-icon {
         font-size: 2rem;

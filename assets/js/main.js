@@ -31,27 +31,6 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader, { passive: true })
 scrollHeader()
 
-/*================== skills ========================== */
-// Hanya satu kelompok skill yang terbuka; klik kelompok yang sedang terbuka untuk menutupnya
-const skillsHeaders = document.querySelectorAll('.skills__header')
-
-skillsHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.parentNode
-        const wasOpen = content.classList.contains('skills__open')
-
-        skillsHeaders.forEach(h => {
-            h.parentNode.classList.replace('skills__open', 'skills__close')
-            h.setAttribute('aria-expanded', 'false')
-        })
-
-        if(!wasOpen) {
-            content.classList.replace('skills__close', 'skills__open')
-            header.setAttribute('aria-expanded', 'true')
-        }
-    })
-})
-
 /*--------------------- qualification tabs ------------------------ */
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')

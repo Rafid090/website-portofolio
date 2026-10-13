@@ -249,7 +249,7 @@ button {
 .about__deskripsi {
     justify-content: center;
     color: var(--title-color);
-    margin-bottom: var(--mb-0-25);
+    margin-bottom: var(--mb-1);
 }
 .home__deskripsi {
     justify-content: center;

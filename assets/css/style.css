@@ -326,6 +326,19 @@ button {
 .home__scroll-arrow {
     font-size: 24px;
 }
+.home__status {
+    display: inline-flex;
+    align-items: center;
+    column-gap: var(--mb-0-5);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    background-color: var(--input-color);
+    padding: .35rem .9rem;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1-5);
+}
+
 .home__button {
     display: flex;
     justify-content: center;
@@ -454,6 +467,20 @@ button {
     padding-left: 1.1rem;
     margin-top: var(--mb-0-5);
     font-size: var(--small-font-size);
+}
+
+.qualification__link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: var(--mb-0-25);
+    margin-top: var(--mb-0-5);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+}
+
+.qualification__link:hover {
+    color: var(--first-color-alt);
 }
 
 .qualification__list li + li {

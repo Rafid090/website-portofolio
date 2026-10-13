@@ -307,6 +307,11 @@ button {
 }
 
 
+.home__scroll {
+    display: flex;
+    justify-content: center;
+}
+
 .home__scroll-button {
     color: var(--first-color);
     transition: .3s;
@@ -831,9 +836,6 @@ a.contact_information:hover .contact_title {
     .home__blob {
         width: 270px;
     }
-    .home__scroll-button {
-        margin-left: 3rem;
-    }
 
     .container__about {
         column-gap: 5rem;
@@ -842,7 +844,7 @@ a.contact_information:hover .contact_title {
     .home__deskripsi,
     .about__deskripsi,
     .portofolio_description {
-        text-align: center;
+        text-align: left;
     }
     .about__img {
         width: 350px;

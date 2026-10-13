@@ -247,12 +247,13 @@ button {
 }
 
 .about__deskripsi {
-    justify-content: center;
     color: var(--title-color);
     margin-bottom: var(--mb-1);
 }
-.home__deskripsi {
-    justify-content: center;
+.home__deskripsi,
+.about__deskripsi,
+.portofolio_description {
+    text-align: justify;
 }
 
 .home__social-icon {
@@ -795,6 +796,11 @@ a.contact_information:hover .contact_title {
     .container__about {
         column-gap: 5rem;
         align-items: center;
+    }
+    .home__deskripsi,
+    .about__deskripsi,
+    .portofolio_description {
+        text-align: center;
     }
     .about__img {
         width: 350px;
